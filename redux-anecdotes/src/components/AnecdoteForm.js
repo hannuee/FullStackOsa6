@@ -19,6 +19,7 @@ const AnecdoteForm = (props) => {
           <div><input name="anecdote" /></div>
           <button type="submit">create</button>
         </form>
+        <br />
       </>
     )
   }
