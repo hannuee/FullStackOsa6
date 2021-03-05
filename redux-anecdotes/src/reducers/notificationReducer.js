@@ -10,10 +10,13 @@
     }
   }
   
-  export const changeNotification = (notification) => {
-    return {
-      type: 'CHANGE',
-      data: { notification }
+  export const changeNotification = (notification, seconds) => {
+    return async dispatch => {
+      setTimeout(() => {dispatch(clearNotification())}, seconds*1000)
+      dispatch({
+        type: 'CHANGE',
+        data: { notification }
+      })
     }
   }
   

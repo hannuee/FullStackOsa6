@@ -13,8 +13,7 @@ const AnecdoteList = (props) => {
 
   const vote = (anecdote) => {
     dispatch(voteAnecdote(anecdote))
-    dispatch(changeNotification(`you voted '${anecdote.content}'`))
-    setTimeout(() => {dispatch(clearNotification())}, 5000)
+    dispatch(changeNotification(`you voted '${anecdote.content}'`, 5))
   }
   
     return (
