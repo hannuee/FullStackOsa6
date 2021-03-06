@@ -1,21 +1,25 @@
-  const initialState = 'Everything is ok!'
+  const initialState = {
+    text: 'Everything is ok!',
+    timeoutID: null
+  }
   
   const reducer = (state = initialState, action) => {
     switch (action.type) {
       case 'CHANGE':
-        return action.data.notification
+        if (state.timeoutID !== null) clearTimeout(state.timeoutID)
+        return action.data
       case 'CLEAR':
-          return ''
+          return {text: '', timeoutID: null}
       default: return state
     }
   }
   
-  export const changeNotification = (notification, seconds) => {
+  export const changeNotification = (text, seconds) => {
     return async dispatch => {
-      setTimeout(() => {dispatch(clearNotification())}, seconds*1000)
+      const timeoutID = setTimeout(() => {dispatch(clearNotification())}, seconds*1000)
       dispatch({
         type: 'CHANGE',
-        data: { notification }
+        data: { text, timeoutID }
       })
     }
   }

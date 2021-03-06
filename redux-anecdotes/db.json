@@ -37,23 +37,38 @@
     },
     {
       "content": "ULTRA nerokas anekdootti!",
-      "votes": 4,
+      "votes": 5,
       "id": "Z0t3Js4"
     },
     {
       "content": "UBER nerokas anekdootti!",
-      "votes": 8,
+      "votes": 42,
       "id": "_UEsglL"
     },
     {
       "content": "Taas uusi anekdootti.",
-      "votes": 0,
+      "votes": 1,
       "id": "lNEwLPD"
     },
     {
       "content": "Maailman luokan anekdootti!",
-      "votes": 7,
+      "votes": 9,
       "id": "8wR7Chl"
+    },
+    {
+      "content": "Semi ok anekdootti.",
+      "votes": 1,
+      "id": "6ayJSIR"
+    },
+    {
+      "content": "Perus anekdootti.",
+      "votes": 1,
+      "id": "5wE1CND"
+    },
+    {
+      "content": "Testi anekdootti.",
+      "votes": 8,
+      "id": "YGTzout"
     }
   ]
 }
